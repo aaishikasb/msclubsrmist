@@ -62,7 +62,16 @@
     </div>
     <div class="container">
         <h1>Certificates</h1>
-        <h6>(available only for 2nd Round of CodeStruck 1.0)</h6>
+        <h6>Select Event</h6>
+  <!-- Dropdown Structure -->
+  <div class="row">
+        <label>Omnipotent October</label><BR>
+    <a class="waves-effect waves-light btn-small">Application Security and Ethical Hacking</a>
+    <a class="waves-effect waves-light btn-small">Introduction to Azure DevOps</a>
+    <a class="waves-effect waves-light btn-small">Blockchain and Decentralized AI</a>
+    
+  </div>
+  <!-- dropdown ends-->
         <div class="row">
             <a href="#!" id="errorlink">s</a>
         </div>
@@ -127,6 +136,12 @@
             $('.sidenav').sidenav();
         });
     </script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.dropdown-trigger');
+    var instances = M.Dropdown.init(elems, options);
+  });
+  </script>
 
 </body>
 
